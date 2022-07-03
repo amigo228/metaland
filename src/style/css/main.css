@@ -1,7 +1,194 @@
+/* mixin usage */
+/*--------------------------------
+	Responsive ratio
+	Used for creating scalable elements that maintain the same ratio
+	example:
+	.element {
+		@include responsive-ratio(400, 300);
+	}
+*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+img {
   display: block;
+  max-width: 100%;
+}
+
+h1,
+p,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 0 15px;
+}
+.header .container {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+}
+.header.active .nav-holder {
+  opacity: 1;
+  visibility: visible;
+}
+.header.active .nav-opener span {
+  opacity: 0;
+  visibility: hidden;
+}
+.header.active .nav-opener::before {
+  transform: rotate(45deg);
+  top: 15px;
+}
+.header.active .nav-opener::after {
+  transform: rotate(-45deg);
+  bottom: 14px;
+}
+
+.nav-holder {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: all ease-in-out 0.3s;
+}
+@media (min-width: 1024px) {
+  .nav-holder {
+    transform: translate(0, 0);
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    height: auto;
+  }
+}
+
+.nav {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+@media (min-width: 1025px) {
+  .nav {
+    justify-content: unset;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1025px) {
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.nav-item {
+  padding: 0 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 1025px) {
+  .nav-item {
+    margin-bottom: 0;
+  }
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+}
+@media (min-width: 1025px) {
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-item {
+  padding-left: 0;
+}
+@media (min-width: 769px) {
+  .list-item {
+    padding-left: 12px;
+  }
+}
+
+.nav-opener {
+  background-color: #000;
+  border: none;
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 30px;
+}
+@media (min-width: 1024px) {
+  .nav-opener {
+    display: none;
+  }
+}
+.nav-opener::before, .nav-opener::after,
+.nav-opener span {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+.nav-opener::before {
+  top: 0;
+}
+.nav-opener::after {
+  bottom: 0;
+}
+.nav-opener span {
+  top: 50%;
+  transform: translateY(-50%);
 }
 /*# sourceMappingURL=main.css.map */

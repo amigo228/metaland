@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    display: block;
-}
+@import 'mixins';
+@import 'variables';
+@import 'general';
+@import 'blocks/header';
