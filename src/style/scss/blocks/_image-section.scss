@@ -8,4 +8,9 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    @include media ('>768px') {
+        padding-bottom: 120px;
+    }
+
 }

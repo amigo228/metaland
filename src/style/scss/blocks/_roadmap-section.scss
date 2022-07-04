@@ -1,0 +1,141 @@
+.roadmap-section {
+
+    h2 {
+        font-family: $audiowide;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    .container {
+        .title-holder {
+
+            margin-bottom: 30px;
+
+            @include media ('>768px') {
+                margin-bottom: 60px;
+            }
+
+            @include media ('>1024px') {
+                margin-bottom: 110px;
+            }
+
+        }
+    }
+}
+
+.child:hover .number {
+    background-color: $green;
+    color: $black;
+}
+
+.number {
+    display: inline-block;
+    font-family: $dmmono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    padding: 7px 16px 9px;
+    border: 1px solid $green;
+    color: $green;
+
+}
+
+.line {
+    width: 1px;
+    background-color: $green;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+    @include media ('>1024px') {
+        margin-bottom: 55px;
+    }
+
+}
+
+.child {
+    background-color: $dark-grey;
+    padding: 12px;
+    max-width: 538px;
+    width: 100%;
+    font-family: $dmmono;
+    margin: 0 auto;
+    border: 1px solid $green;
+    margin-bottom: 15px;
+
+    @include media ('>1024px') {
+        margin-bottom: 45px;
+    }
+
+
+    ul {
+        display: block;
+        padding-left: 20px;
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 32px;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 26px;
+        color: $white;
+
+    }
+
+    .caption {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 13px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid $green;
+    }
+
+    h5 {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $green;
+
+    }
+
+    h6 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    .caption-holder {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.cover {
+    display: flex;
+    padding-bottom: 18px;
+}
+
+.yeden {
+    margin-bottom: 14px;
+}

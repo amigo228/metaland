@@ -26,7 +26,10 @@ img {
 h1,
 p,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -562,5 +565,137 @@ a {
   height: 240px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media (min-width: 769px) {
+  .image-section {
+    padding-bottom: 120px;
+  }
+}
+
+.roadmap-section h2 {
+  font-family: "Audiowide", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.roadmap-section .container .title-holder {
+  margin-bottom: 30px;
+}
+@media (min-width: 769px) {
+  .roadmap-section .container .title-holder {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .roadmap-section .container .title-holder {
+    margin-bottom: 110px;
+  }
+}
+
+.child:hover .number {
+  background-color: #8DFD1B;
+  color: #000;
+}
+
+.number {
+  display: inline-block;
+  font-family: "DM Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  padding: 7px 16px 9px;
+  border: 1px solid #8DFD1B;
+  color: #8DFD1B;
+}
+
+.line {
+  width: 1px;
+  background-color: #8DFD1B;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+@media (min-width: 1025px) {
+  .line {
+    margin-bottom: 55px;
+  }
+}
+
+.child {
+  background-color: #222222;
+  padding: 12px;
+  max-width: 538px;
+  width: 100%;
+  font-family: "DM Mono", monospace;
+  margin: 0 auto;
+  border: 1px solid #8DFD1B;
+  margin-bottom: 15px;
+}
+@media (min-width: 1025px) {
+  .child {
+    margin-bottom: 45px;
+  }
+}
+.child ul {
+  display: block;
+  padding-left: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.child p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 26px;
+  color: #fff;
+}
+.child .caption {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 13px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #8DFD1B;
+}
+.child h5 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8DFD1B;
+}
+.child h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.child .caption-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover {
+  display: flex;
+  padding-bottom: 18px;
+}
+
+.yeden {
+  margin-bottom: 14px;
 }
 /*# sourceMappingURL=main.css.map */
