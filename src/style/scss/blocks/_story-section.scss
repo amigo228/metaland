@@ -1,0 +1,119 @@
+.story-section {
+    padding: 30px 0 120px;
+
+    .container {
+
+        .titles-holder {
+            text-align: center;
+            padding-bottom: 61px;
+
+            h2,
+            span {
+                font-size: 37px;
+                display: inline-block;
+            }
+        }
+
+        .flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include media ('>1024px') {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+        }
+    }
+}
+
+.btn-item {
+    display: block;
+    color: $white;
+    padding: 25px 50px;
+    cursor: pointer;
+
+    span {
+        text-align: center;
+    }
+
+    &.active-btn {
+        background-color: $dark-grey;
+        color: $green;
+    }
+
+    @include media ('>1024px') {
+        text-align: left;
+        padding: 25px 134px 31px 28px;
+    }
+
+    &:hover {
+        background-position: left;
+    }
+}
+
+.flex-box {
+    .flex-child:last-of-type {
+        background-color: $dark-grey;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @include media ('>768px') {
+            padding: 60px;
+        }
+
+        @include media ('>1024px') {
+            align-items: unset;
+            justify-content: unset;
+        }
+    }
+}
+
+.info-holder {
+    max-width: 546px;
+    width: 100%;
+
+    @include media ('>768px') {
+        padding-left: 40px;
+    }
+
+    .span-g {
+        padding: 10px 0;
+        padding-left: 22px;
+        margin-bottom: 32px;
+    }
+
+    .text-holder {
+        p {
+            margin-bottom: 17px;
+            padding-left: 22px;
+            font-size: 14px;
+
+            @include media ('>768px') {
+                font-size: 16px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media ('>768px') {
+        flex-direction: row;
+    }
+
+    @include media ('>1024px') {
+        display: block;
+    }
+}

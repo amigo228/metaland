@@ -425,6 +425,7 @@ a {
 }
 
 .btn-wave {
+  display: inline-block;
   color: #fff;
   font-family: "DM Mono";
   font-weight: 400;
@@ -440,5 +441,126 @@ a {
   color: yellow;
   font-weight: 500;
   font-size: 20px;
+}
+
+.story-section {
+  padding: 30px 0 120px;
+}
+.story-section .container .titles-holder {
+  text-align: center;
+  padding-bottom: 61px;
+}
+.story-section .container .titles-holder h2,
+.story-section .container .titles-holder span {
+  font-size: 37px;
+  display: inline-block;
+}
+.story-section .container .flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1025px) {
+  .story-section .container .flex-box {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.btn-item {
+  display: block;
+  color: #fff;
+  padding: 25px 50px;
+  cursor: pointer;
+}
+.btn-item span {
+  text-align: center;
+}
+.btn-item.active-btn {
+  background-color: #222222;
+  color: #8DFD1B;
+}
+@media (min-width: 1025px) {
+  .btn-item {
+    text-align: left;
+    padding: 25px 134px 31px 28px;
+  }
+}
+.btn-item:hover {
+  background-position: left;
+}
+
+.flex-box .flex-child:last-of-type {
+  background-color: #222222;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .flex-box .flex-child:last-of-type {
+    padding: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .flex-box .flex-child:last-of-type {
+    align-items: unset;
+    justify-content: unset;
+  }
+}
+
+.info-holder {
+  max-width: 546px;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .info-holder {
+    padding-left: 40px;
+  }
+}
+.info-holder .span-g {
+  padding: 10px 0;
+  padding-left: 22px;
+  margin-bottom: 32px;
+}
+.info-holder .text-holder p {
+  margin-bottom: 17px;
+  padding-left: 22px;
+  font-size: 14px;
+}
+@media (min-width: 769px) {
+  .info-holder .text-holder p {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .btn-list {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1025px) {
+  .btn-list {
+    display: block;
+  }
+}
+
+.image-section .container {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
+  height: 240px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
