@@ -1,0 +1,143 @@
+.wave-section {
+    .container {
+        max-width: 1373px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media ('>1024px') {
+            flex-direction: row;
+        }
+
+        .flex-item:last-of-type {
+            padding-top: 24px;
+
+            @include media ('>1024px') {
+                padding-top: 124px;
+            }
+        }
+
+        .flex-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include media ('>1024px') {
+                display: block;
+            }
+        }
+
+    }
+
+    .text-holder {
+        padding: 15px 20px;
+        font-size: 14px;
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        @include media ('>768px') {
+            font-size: 16px;
+        }
+
+        @include media ('>1024px') {
+            padding: 32px 213px 18px 0;
+        }
+    }
+}
+
+.titles-holder {
+    font-family: $audiowide;
+
+    padding: 20px;
+    text-align: center;
+
+    @include media ('>1024px') {
+        padding: 41px 163px 41px 63px;
+        text-align: left;
+    }
+
+
+    h2 {
+        font-size: 24px;
+        line-height: 25px;
+        color: $white;
+        text-transform: uppercase;
+
+        @include media ('>768px') {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        @include media ('>1024px') {
+            font-size: 38px;
+            line-height: 45px;
+        }
+    }
+
+    span {
+        font-size: 24px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $grey;
+
+        @include media ('>768px') {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        @include media ('>1024px') {
+            font-size: 38px;
+            line-height: 45px;
+        }
+    }
+}
+
+.span-g {
+    border-left: 2px solid $green;
+    padding: 0 20px;
+    display: block;
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+    color: $green;
+
+    @include media ('>768px') {
+        padding-left: 22px;
+        font-size: 21px;
+        padding-right: 213px;
+    }
+
+    @include media ('>1024px') {
+        padding-left: 22px;
+        padding-right: 213px;
+    }
+}
+
+
+.btn-wave {
+    color: $white;
+    font-family: 'DM Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 10px 33px 16px;
+    border: 1px solid $green;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+        background-color: #8d0303;
+        color: yellow;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
