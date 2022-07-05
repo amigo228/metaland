@@ -115,6 +115,12 @@ window.addEventListener('scroll', (event) => {
     if (window.pageYOffset > 2700) {
         interupt(3);
     }
+
+    if (window.pageYOffset < 1500) {
+        remove(1);
+        remove(2);
+        remove(3);
+    }
 });
 
 
@@ -128,6 +134,19 @@ function interupt(check) {
             break;
 
         case 3: thirdChild.classList.add('side');
+            break;
+    }
+}
+
+function remove(check) {
+    switch (check) {
+        case 1: firstChild.classList.remove('side');
+            break;
+
+        case 2: secondtChild.classList.remove('side');
+            break;
+
+        case 3: thirdChild.classList.remove('side');
             break;
     }
 }
