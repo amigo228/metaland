@@ -4,7 +4,15 @@ let navOpener = document.querySelector('.js-nav-opener');
 let header = document.querySelector('.header');
 
 navOpener.addEventListener('click', () => {
-    header.classList.toggle('active');
+
+    if (header.classList.contains('active')) {
+        header.classList.remove('active');
+        document.body.style.overflowY = 'visible';
+    }
+    else {
+        header.classList.add('active');
+        document.body.style.overflowY = 'hidden';
+    }
 });
 
 //story-section
