@@ -635,10 +635,12 @@ a {
   margin: 0 auto;
   border: 1px solid #8DFD1B;
   margin-bottom: 15px;
+  transition: all ease-in-out 0.7s;
 }
 @media (min-width: 1025px) {
   .child {
     margin-bottom: 45px;
+    transform: translateX(800px);
   }
 }
 .child ul {
@@ -689,6 +691,9 @@ a {
   display: flex;
   flex-direction: column;
 }
+.child.side {
+  transform: translateX(0);
+}
 
 .cover {
   display: flex;
@@ -697,5 +702,360 @@ a {
 
 .yeden {
   margin-bottom: 14px;
+}
+
+.team-section {
+  padding: 30px 0 50px;
+}
+@media (min-width: 769px) {
+  .team-section {
+    padding: 70px 0 180px;
+  }
+}
+@media (min-width: 1025px) {
+  .team-section {
+    padding: 115px 0 236px;
+  }
+}
+.team-section .container {
+  max-width: 1160px;
+  width: 100%;
+}
+.team-section .container h2 {
+  font-family: "Audiowide", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media (min-width: 769px) {
+  .team-section .container h2 {
+    font-size: 69px;
+    line-height: 78px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .team-section .container h2 {
+    font-size: 79px;
+    line-height: 88px;
+    margin-bottom: 129px;
+  }
+}
+.team-section .container .flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1025px) {
+  .team-section .container .flex-box {
+    flex-direction: row;
+  }
+}
+.team-section .container .flex-box .flex-child {
+  max-width: 320px;
+  width: 100%;
+  padding: 0;
+}
+.team-section .container .flex-box .flex-child .img-holder {
+  margin-bottom: 19px;
+}
+.team-section .container .flex-box .flex-child h3 {
+  font-family: "DM Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.team-section .container .flex-box .flex-child:last-of-type {
+  display: block;
+  background-color: unset;
+}
+.team-section .container .flex-box .flex-child span {
+  display: block;
+  font-family: "DM Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8DFD1B;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.team-section .container .flex-box .flex-child ul {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.team-section .container .flex-box .flex-child p {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  padding: 0 40px 17px;
+}
+
+.discord-section {
+  padding-bottom: 25px;
+}
+@media (min-width: 769px) {
+  .discord-section {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .discord-section {
+    padding-bottom: 118px;
+  }
+}
+.discord-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (min-width: 1025px) {
+  .discord-section .container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1025px) {
+  .discord-section .container .img-holder {
+    width: 50%;
+  }
+}
+.discord-section .container .img-holder img {
+  margin: 0 auto;
+}
+
+.information-holder {
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .information-holder {
+    width: 50%;
+    padding: 117px 100px 117px 0;
+    text-align: unset;
+  }
+}
+.information-holder h2 {
+  font-family: "Audiowide", cursive;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (min-width: 769px) {
+  .information-holder h2 {
+    font-size: 41px;
+    line-height: 51px;
+  }
+}
+@media (min-width: 1025px) {
+  .information-holder h2 {
+    font-size: 51px;
+    line-height: 61px;
+  }
+}
+.information-holder span {
+  display: block;
+  font-family: "Audiowide", cursive;
+  font-size: 31px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #8DFD1B;
+  margin-bottom: 34px;
+}
+@media (min-width: 769px) {
+  .information-holder span {
+    font-size: 41px;
+    line-height: 51px;
+  }
+}
+@media (min-width: 1025px) {
+  .information-holder span {
+    font-size: 51px;
+    line-height: 61px;
+  }
+}
+.information-holder p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+@media (min-width: 1025px) {
+  .information-holder p {
+    padding-right: 138px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.information-holder a {
+  position: relative;
+  font-family: "DM Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 15px;
+}
+.information-holder a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 50%;
+  left: 0;
+  transform: translate(50%, 50%);
+  background-image: url("../../img/discordafter.svg");
+}
+@media (min-width: 1025px) {
+  .information-holder a {
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  background-color: #42006A;
+  padding: 15px;
+  font-family: "DM Mono", monospace;
+  color: #fff;
+}
+@media (min-width: 1025px) {
+  .footer {
+    padding: 100px 140px;
+  }
+}
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .footer .container {
+    flex-direction: row;
+  }
+}
+.footer .container .list-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 769px) {
+  .footer .container .list-holder {
+    gap: 100px;
+  }
+}
+.footer .container .logo-holder {
+  margin-bottom: 30px;
+}
+.footer .container .logo-holder a {
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 769px) {
+  .footer .container .logo-holder a {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1025px) {
+  .footer .container .logo-holder a {
+    margin-bottom: 70px;
+  }
+}
+.footer .container .logo-holder img {
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .footer .container .logo-holder img {
+    margin: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .footer .container .logo-holder {
+    margin-bottom: 0;
+  }
+}
+
+.copyright {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .copyright {
+    display: inline;
+    text-align: left;
+  }
+}
+
+.powered-holder {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1025px) {
+  .powered-holder {
+    margin-bottom: 0;
+  }
+}
+.powered-holder span {
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .powered-holder span {
+    text-align: left;
+  }
+}
+.powered-holder span:first-of-type {
+  margin-bottom: 29px;
+  display: block;
+}
+
+.footer-list .list-item {
+  margin-bottom: 29px;
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .footer-list .list-item {
+    text-align: left;
+  }
+}
+.footer-list .list-item .item-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+.footer-list .list-item .item-link:hover {
+  color: aqua;
 }
 /*# sourceMappingURL=main.css.map */

@@ -95,3 +95,39 @@ btnBlock.addEventListener('click', (event) => {
     }
 
 })
+
+//roadmap section
+
+let roadmap = document.querySelector('.roadmap');
+let firstChild = document.getElementById('first');
+let secondtChild = document.getElementById('second');
+let thirdChild = document.getElementById('third');
+
+window.addEventListener('scroll', (event) => {
+    if (window.pageYOffset > 1900) {
+        interupt(1);
+    }
+
+    if (window.pageYOffset > 2300) {
+        interupt(2);
+    }
+
+    if (window.pageYOffset > 2700) {
+        interupt(3);
+    }
+});
+
+
+
+function interupt(check) {
+    switch (check) {
+        case 1: firstChild.classList.add('side');
+            break;
+
+        case 2: secondtChild.classList.add('side');
+            break;
+
+        case 3: thirdChild.classList.add('side');
+            break;
+    }
+}

@@ -68,11 +68,14 @@
     margin: 0 auto;
     border: 1px solid $green;
     margin-bottom: 15px;
+    transition: all ease-in-out .7s;
+
 
     @include media ('>1024px') {
         margin-bottom: 45px;
-    }
 
+        transform: translateX(800px);
+    }
 
     ul {
         display: block;
@@ -128,6 +131,10 @@
     .caption-holder {
         display: flex;
         flex-direction: column;
+    }
+
+    &.side {
+        transform: translateX(0);
     }
 }
 

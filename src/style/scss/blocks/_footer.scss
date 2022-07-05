@@ -1,0 +1,125 @@
+.footer {
+    background-color: $purple;
+    padding: 15px;
+
+    @include media ('>1024px') {
+        padding: 100px 140px;
+    }
+
+    font-family: $dmmono;
+    color: $white;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        flex-direction: column;
+
+        @include media ('>768px') {
+            flex-direction: row;
+        }
+
+
+        .list-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include media ('>768px') {
+                gap: 100px;
+            }
+        }
+
+        .logo-holder {
+            margin-bottom: 30px;
+
+            a {
+                display: block;
+                margin-bottom: 10px;
+
+                @include media ('>768px') {
+                    margin-bottom: 30px;
+                }
+
+                @include media ('>1024px') {
+                    margin-bottom: 70px;
+                }
+            }
+
+            img {
+                margin: 0 auto;
+
+                @include media ('>768px') {
+                    margin: 0;
+                }
+            }
+
+            @include media ('>1024px') {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.copyright {
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+
+    @include media ('>768px') {
+        display: inline;
+        text-align: left;
+    }
+}
+
+.powered-holder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 30px;
+
+    @include media ('>1024px') {
+        margin-bottom: 0;
+    }
+
+    span {
+        text-align: center;
+
+        @include media ('>1024px') {
+            text-align: left;
+        }
+
+        &:first-of-type {
+            margin-bottom: 29px;
+            display: block;
+        }
+    }
+}
+
+.footer-list {
+
+    .list-item {
+        margin-bottom: 29px;
+
+        text-align: center;
+
+        @include media ('>1024px') {
+            text-align: left;
+        }
+
+        .item-link {
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+
+            &:hover {
+                color: aqua;
+            }
+        }
+
+
+    }
+}
